@@ -88,14 +88,26 @@ Good card title styles:
 - `85% PILOT / 5% PRODUCTION`
 - `FROM DEMO TO DEPLOYMENT`
 
+## Quality bar before posting
+
+Only publish when the draft has all three:
+- one visible hook in the first 1–2 lines
+- at least one concrete signal, number, or named company
+- one clear takeaway
+
+If the draft misses any of these, rewrite before posting.
+
 ## Safety / execution notes
 
 - Publishing is an external action: make sure the user asked for it.
 - Do not silently post from the wrong account; verify the visible profile handle in snapshot first.
 - If X shows graduated-access or anti-spam friction, tell the user exactly what blocked posting.
 - Prefer one strong post with media over several weak posts.
+- Retry failed publish attempts carefully; do not spam the composer.
 
 ## Read as needed
 
 - Read `references/post-templates.md` when you need ready-to-use hooks, thread structures, and card copy patterns.
 - Read `references/browser-publish-checklist.md` when you need the exact browser execution sequence.
+- Read `references/search-playbook.md` when you need tighter X query strategy and filtering heuristics.
+- Read `references/publish-recovery.md` when publishing fails, text overflows, or X shows account friction.
