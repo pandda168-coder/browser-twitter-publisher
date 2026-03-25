@@ -1,18 +1,19 @@
-# workspace-shortvideo
+# browser-twitter-publisher
 
-Browser-driven X/Twitter publishing workflow for OpenClaw.
+A focused OpenClaw skill project for browser-driven X/Twitter publishing.
 
-This repository currently packages one reusable AgentSkill:
+This repository packages one reusable AgentSkill:
 
 - `browser-twitter-publisher`
 
-It is designed for workflows where an agent should:
+The skill is designed for workflows where an agent should:
 
-1. attach to a Chrome session via `chrome-devtools-mcp`
-2. research live X/Twitter posts in-browser
-3. draft stronger X-native copy
-4. generate a simple card image
-5. upload media and publish a post directly from the browser
+1. attach to a Chrome session through `chrome-devtools-mcp`
+2. research live X posts in-browser
+3. filter low-signal results
+4. rewrite copy so it fits X and reads like X-native content
+5. generate a simple card image fast
+6. upload media and publish directly from the browser
 
 ## Repository layout
 
@@ -28,46 +29,38 @@ dist/
   browser-twitter-publisher.skill
 ```
 
-## Main skill
+## Skill scope
 
-### `browser-twitter-publisher`
-
-Source:
-- `skills/browser-twitter-publisher/`
-
-Packaged artifact:
-- `dist/browser-twitter-publisher.skill`
-
-This skill covers:
+`browser-twitter-publisher` covers:
 - attaching to a debuggable Chrome session
-- verifying X login state before actions
-- searching X with better query hygiene
-- filtering low-signal results
-- compressing copy to fit X limits
-- generating fast SVG-based card images
+- verifying X login state before external actions
+- using better X search query hygiene
+- removing spam, duplicate reposts, and low-information posts
+- compressing text to fit X limits
+- generating SVG-based card images and exporting them to PNG
 - uploading media and publishing posts
-- verifying successful publication
+- verifying publish success and returning the final post URL
 
-## How to iterate on the skill
+## Iteration workflow
 
-### 1. Edit source files
-Update:
+### Edit
+Update source files in:
 - `skills/browser-twitter-publisher/SKILL.md`
 - `skills/browser-twitter-publisher/references/*.md`
 
-### 2. Repackage
+### Repackage
 ```bash
 python3 /opt/homebrew/lib/node_modules/openclaw/skills/skill-creator/scripts/package_skill.py \
   skills/browser-twitter-publisher dist
 ```
 
-### 3. Commit changes
+### Commit
 ```bash
-git add skills/browser-twitter-publisher dist/browser-twitter-publisher.skill
+git add skills/browser-twitter-publisher dist/browser-twitter-publisher.skill README.md .gitignore
 git commit -m "Update browser-twitter-publisher skill"
 ```
 
 ## Notes
 
-This repo is intentionally focused on the skill source and packaged artifact.
-Workspace notes, memories, generated briefs, and scratch assets are ignored so the repository stays clean for future skill iteration.
+This repository is intentionally kept narrow: skill source, packaged artifact, and minimal repo metadata.
+Workspace memories, generated briefs, scratch assets, and other transient files are ignored so the project stays clean for future skill iteration.
