@@ -56,6 +56,13 @@
 - where the market goes next
 - enterprise integration / runtime / security
 
+## Visual guidance
+
+- Prefer one giant headline over many balanced text blocks.
+- Use fewer words, stronger contrast, and more empty space.
+- A post image should feel like a tech media cover, not a report slide.
+- Default visual hierarchy: headline -> short subtitle -> 3 short modules -> one-line footer.
+
 ## Card copy patterns
 
 ### Pattern A

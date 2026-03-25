@@ -88,6 +88,8 @@ Good card title styles:
 - `AI AGENT PRODUCTION GAP`
 - `85% PILOT / 5% PRODUCTION`
 - `FROM DEMO TO DEPLOYMENT`
+- `FROM DEMO TO SYSTEM`
+- `3 SIGNALS FROM X TODAY`
 
 ## Quality bar before posting
 
