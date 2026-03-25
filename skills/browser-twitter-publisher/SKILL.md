@@ -47,7 +47,8 @@ Publish X posts from a browser session, not just as draft text. Use this for bro
    - Do not click `Post` until the composer shows the button enabled.
 
 6. **Create a simple card image when needed**
-   - For fast execution, generate a local SVG with large headline, 2–3 short bullets, and date.
+   - Prefer editing `assets/card-template.svg` instead of rebuilding a card from scratch.
+   - Keep the card to one headline, one subtitle, 2–3 short modules, and one footer takeaway.
    - Open the SVG in the browser and use `take_screenshot` to export PNG.
    - Then upload via the composer’s media button using `upload_file`.
    - Keep card copy minimal; the post should still work without reading every line on the card.

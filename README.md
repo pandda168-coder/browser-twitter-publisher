@@ -24,6 +24,10 @@ skills/
     references/
       browser-publish-checklist.md
       post-templates.md
+      publish-recovery.md
+      search-playbook.md
+    assets/
+      card-template.svg
 
 dist/
   browser-twitter-publisher.skill
